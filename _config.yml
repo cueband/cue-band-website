@@ -12,6 +12,12 @@ logo:
   desktop: "images/logo/cueband-logo-2.png" #"images/logo/logo.svg"
   desktop_height: "75px" #"36px"
 
+  northumbria: "images/logo/northumbria.png" 
+  newcastle:  "images/logo/newcastle.png" 
+  lasige: "images/logo/lasige.png" 
+  dp: "images/logo/dp.png"
+  parkinsons_uk: "images/logo/parkinsons_uk.png"
+
 footer:
   copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
 
