@@ -5,6 +5,17 @@ layout: page
 bodyClass: page-about
 ---
 
+Cue Band was devised by a group of researchers and funded with a grant of £198,571.52 from Parkinson's UK. Cue Band 
+
+
+## About Drooling
+
+## About Band
+
+## Study and Timeline
+
+
+
 Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
 de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
 crimen habet Priamum nec.
