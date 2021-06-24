@@ -9,6 +9,14 @@ layout: default
                 <p class="team-description">{{ page.date | date_to_long_string }}</p>
                 <div class="content">{{content}}</div>
             </div>
+            <div class="mt-3">
+                {% if page.previous.url %}
+                <a href="{{page.previous.url}}">< Previous Article</a>
+                {% endif %}
+                {% if page.next.url %}
+                <a href="{{page.next.url}}" style="float: right">Next Article ></a>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
