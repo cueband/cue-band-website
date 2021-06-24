@@ -5,7 +5,7 @@ layout: page
 bodyClass: page-about
 ---
 
-Cue Band was devised by a group of researchers and funded with a grant of £198,571.52 from Parkinson's UK. Cue Band aims 
+Cue Band was devised by a group of researchers and funded with a grant of £198,571.52 from Parkinson's UK. Cue Band aims to develop a new wearable to significally reduce the drooling symptoms through cueing for people with Parkinson's.
 
 
 ## About Drooling in Parkinson's
