@@ -12,6 +12,11 @@
     form > div > input[type=email] {
         margin-left: 10px;
         transform: translate(0, -5px);
+        width: 100%;
+    }
+
+    form > button:hover {
+        box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
     }
 
 </style>
@@ -19,7 +24,7 @@
 <form style="display: flex; flex-direction: column;">
     <div>
         <label for="get-involved-email">Email:</label>
-        <input id="get-involved-email" type="email" placeholder="Your email" required style="width: 100%;">
+        <input id="get-involved-email" type="email" placeholder="Your email" required autocomplete="on">
     </div>
     <div>
         <input id="consent-get-involved-email" type="checkbox" required>
@@ -29,5 +34,5 @@
         <input id="receive-get-involved-email" type="checkbox" required>
         <label for="receive-get-involved-email">By ticking this box you are agreeing to receive Cue Band emails. You can withdraw your consent at any time. Please refer to our Privacy Policy or Contact Us for more details.</label>
     </div>
-    <button type="submit" style="height: 45px; background-color: #E5261F; color: white; border-color: #8a0200;">Send</button>
+    <button type="submit" style="height: 45px; background-color: #E5261F; color: white; border: 0">Send</button>
 </form>
