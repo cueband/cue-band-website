@@ -1,10 +1,12 @@
 ---
-title: "Bill McDonald"
+title: "Luís Carvalho"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
-jobtitle: "Graphic Designer"
-linkedinurl: ""
+image: "images/team/luis-carvalho.jpeg"
+jobtitle: "Senior Research Assistant"
+institution: "Northumbria University"
+email: luis.carvalho@northumbria.ac.uk
+core: false
 weight: 7
 layout: team
 ---

@@ -5,7 +5,7 @@ draft: false
 image: "images/team/dan-jackson.jpeg"
 jobtitle: "Senior Research Associate"
 institution: "Newcastle University"
-promoted: true
+core: true
 email: "dan.jackson@ncl.ac.uk"
 weight: 2
 layout: team

@@ -6,7 +6,7 @@ image: "images/team/luis-carvalho.jpeg"
 jobtitle: "Senior Research Assistant"
 institution: "Northumbria University"
 email: luis.carvalho@northumbria.ac.uk
-core: true
+core: false
 weight: 7
 layout: team
 ---

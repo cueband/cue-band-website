@@ -5,7 +5,7 @@ draft: false
 image: "images/team/kyle-montague.jpeg"
 jobtitle: "Associate Professor"
 institution: "Northumbria University" 
-promoted: true
+core: true
 email: kyle.montague@northumbria.ac.uk
 weight: 1
 layout: team

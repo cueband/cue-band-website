@@ -6,7 +6,7 @@ image: "images/team/yu-guan.jpeg"
 jobtitle: "Lecturer"
 institution: "Newcastle University"
 email: "yu.guan@ncl.ac.uk"
-promoted: true
+core: true
 weight: 1
 layout: team
 ---
