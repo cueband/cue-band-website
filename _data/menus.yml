@@ -18,7 +18,16 @@ main:
 footer:
   - name: "Home"
     url: "/"
-    weight: 1
+    weight: 2
+  - name: "About"
+    url: "/about/"
+    weight: 3
+  - name: "Team"
+    url: "/team/"
+    weight: 4
   - name: "Get Involved"
     url: "/getinvolved/"
-    weight: 2
+    weight: 5
+  - name: "Articles"
+    url: /articles/
+    weight: 6

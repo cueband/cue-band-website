@@ -1,11 +1,11 @@
 ---
 title: Get Involved
-layout: teams
+layout: page
 permalink: /getinvolved/
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-# Meet The Team
+Thank you for your interest in Cue Band.
 
-Our team of qualified accountants and financial consultants can help your business at any stage of it's growth.
+{% include get-involved-form.html %}

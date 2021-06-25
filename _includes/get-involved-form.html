@@ -1,0 +1,33 @@
+<style>
+    form > div {
+        display: flex;
+        margin: 20px 0px 20px 0px;
+    }
+
+    form > div > input[type=checkbox] {
+        margin-right: 20px;
+        transform: translate(5px, 5px) scale(1.5);
+    }
+
+    form > div > input[type=email] {
+        margin-left: 10px;
+        transform: translate(0, -5px);
+    }
+
+</style>
+
+<form style="display: flex; flex-direction: column;">
+    <div>
+        <label for="get-involved-email">Email:</label>
+        <input id="get-involved-email" type="email" placeholder="Your email" required style="width: 100%;">
+    </div>
+    <div>
+        <input id="consent-get-involved-email" type="checkbox" required>
+        <label for="consent-get-involved-email">I hereby consent to the Cue Band Privacy Policy.</label>
+    </div>
+    <div>
+        <input id="receive-get-involved-email" type="checkbox" required>
+        <label for="receive-get-involved-email">By ticking this box you are agreeing to receive Cue Band emails. You can withdraw your consent at any time. Please refer to our Privacy Policy or Contact Us for more details.</label>
+    </div>
+    <button type="submit" style="height: 45px; background-color: #E5261F; color: white; border-color: #8a0200;">Send</button>
+</form>
