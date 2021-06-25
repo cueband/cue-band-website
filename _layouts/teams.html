@@ -19,6 +19,7 @@ bodyClass: page-team-list
 </div>
 
 <div class="container pt-6 pb-6">
+    <h1>Core Research Team</h1>
     <div class="row">
         {% assign promoted_teams = site.team | where: "promoted", true | sort: "weight" %}
         {% for team in promoted_teams %}
@@ -32,15 +33,19 @@ bodyClass: page-team-list
                 <div class="team-meta">
                     <h2 class="team-name"><a href="{{ team.url | relative_url }}">{{ team.title }}</a></h2>
                     <p class="team-description">{{ team.jobtitle }}</p>
-                    {% if team.linkedinurl %}
-                    <a target="_blank" href="{{ team.linkedinurl }}">LinkedIn</a>
+                    {% if team.institution %}
+                    <p class="team-description" style="margin-top: -5px;">{{ team.institution }}</p>
+                    {% endif %}
+                    {% if team.email %}
+                    <a target="_blank" href="mailto:{{ team.email }}">{{team.email}}</a>
                     {% endif %}
                 </div>
-                <div class="team-content">{{ team.content | truncate: 120 }}</div>
+                <!--div class="team-content">{{ team.content | truncate: 120 }}</div-->
             </div>
         </div>
         {% endfor %}
     </div>
+    <h1>Steering Committee</h1>
     <div class="row pt-6 pb-6">
         {% assign teams = site.team | where: "promoted", empty | sort: "weight" %}
         {% for team in teams %}

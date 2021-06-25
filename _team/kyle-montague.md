@@ -1,11 +1,12 @@
 ---
-title: "Peter Van Eijk"
+title: "Kyle Montague"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/team/peter-van-eijk-711986-unsplash.jpg"
-jobtitle: "Director"
-linkedinurl: "https://www.linkedin.com/"
+image: "images/team/kyle-montague.jpeg"
+jobtitle: "Associate Professor"
+institution: "Northumbria University" 
 promoted: true
+email: kyle.montague@northumbria.ac.uk
 weight: 1
 layout: team
 ---
