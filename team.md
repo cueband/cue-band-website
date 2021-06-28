@@ -1,10 +1,11 @@
 ---
-title: Team
+title: Cue Band - Who Are We
 layout: teams
-permalink: /team/
+permalink: /whoarewe/
+intro_image: "images/illustrations/pixeltrue-seo-1.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
 # Who Are We
-Meet our Core Research Team and Steering Committee that will enable the realisation of this study.
+Meet the Core Research Team and Steering Committee involved in this project.
