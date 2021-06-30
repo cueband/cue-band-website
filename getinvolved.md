@@ -15,5 +15,8 @@ Thank you for your interest in Cue Band. If you are interested in this participa
 
 * You are willing and able to provide consent to participate.
 
-### Recruitment Form
+### Recruitment Form - Coming Soon
+
+<!---
 {% include get-involved-form.html %}
+-->
