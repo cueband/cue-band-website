@@ -1,13 +1,13 @@
 ---
-title: "Dan Jackson"
+title: "Laura Winder"
 date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/team/dan-jackson.jpeg"
-jobtitle: "Senior Research Associate"
-institution: "Open Lab, Newcastle University"
+image: "images/team/laura-winder.jpg"
+jobtitle: "Project Manager"
+institution: "Northumbria Healthcare NHS Foundation Trust"
+email: laura.winder@northumbria-healthcare.nhs.uk
 core: true
-email: "dan.jackson@newcastle.ac.uk"
-weight: 2
+weight: 7
 layout: team
 ---
 
