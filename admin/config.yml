@@ -1,6 +1,7 @@
 backend:
   name: github
   #name: test-repo
+  repo: cueband/cue-band-website
   branch: main # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads'
 collections:
