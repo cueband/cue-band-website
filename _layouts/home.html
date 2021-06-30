@@ -100,7 +100,7 @@ bodyClass: page-home
   display: block;
   width: 12px;
   height: 12px;
-  margin-top: -10px;
+  margin-top: -5px;
   background: #fff;
   border-radius: 10px;
   border: 4px solid rgb(255,80,80);
@@ -282,6 +282,57 @@ bodyClass: page-home
 
 }
 
+
+@media screen and (max-width: 1299px) {
+
+  .direction-l .flag:before {
+    right: -19px;
+  }
+
+  .direction-r .flag:before {
+    left: -20px;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+
+  .direction-l .flag:before {
+    right: -14px;
+  }
+
+  .direction-r .flag:before {
+    left: -15px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .direction-l .flag:before {
+    right: -22px;
+  }
+
+  .direction-r .flag:before {
+    left: -22px;
+  }
+
+}
+
+@media screen and (max-width: 660px) {
+
+  .direction-l .flag:before {
+    right: 50%;
+    margin-left: -6px;
+  }
+
+  .direction-r .flag:before {
+    left: 50%;
+    right: 50%;
+    margin-left: -6px;
+  }
+
+}
 
 
 </style>
