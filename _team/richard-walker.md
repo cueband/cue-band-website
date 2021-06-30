@@ -5,7 +5,7 @@ draft: false
 image: "images/team/richard-walker.jpg"
 jobtitle: "Chief Investigator and lead for Cueing Trial"
 institution: "Northumbria Healthcare NHS Foundation Trust"
-email: Richard.walker@nhct.nhs.uk
+email: richard.walker@nhct.nhs.uk
 core: true
 weight: 1
 layout: team

@@ -5,7 +5,7 @@ draft: false
 image: "images/team/yu-guan.jpeg"
 jobtitle: "Lecturer"
 institution: "Newcastle University"
-email: "yu.guan@ncl.ac.uk"
+email: "yu.guan@newcastle.ac.uk"
 core: true
 weight: 1
 layout: team
