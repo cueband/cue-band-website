@@ -4,7 +4,7 @@ backend:
   repo: cueband/cue-band-website
   branch: main # Branch to update (optional; defaults to master)
   site_domain: focused-swartz-5094de.netlify.com
-media_folder: 'assets/uploads'
+media_folder: 'images'
 collections:
   - name: 'blog'
     label: 'Blog'
@@ -17,7 +17,9 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Header Image', name: 'image', widget: 'image', allow_multiple: false, required: false, media_folder: /images/posts}
       - { label: 'Body', name: 'body', widget: 'markdown' }
+     
 
   - name: 'team'
     label: 'Team'
@@ -35,4 +37,4 @@ collections:
       - { label: 'Email', name: 'email', widget: 'string'}
       - { label: 'Part of research team?', name: 'core', widget: 'boolean'}
       - { label: 'Weight', name: 'weight', widget: 'string'}
-      - { label: 'Profile Photo', name: 'image', widget: 'image', allow_multiple: false}
+      - { label: 'Profile Photo', name: 'image', widget: 'image', allow_multiple: false, media_folder: /images/team}, 
