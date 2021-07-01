@@ -35,5 +35,5 @@ collections:
       - { label: 'Institution', name: 'institution', widget: 'string' }
       - { label: 'Email', name: 'email', widget: 'string'}
       - { label: 'Part of research team?', name: 'core', widget: 'boolean'}
-      - { label: 'Weight', name: 'weight', widget: 'string'}
+      - { label: 'Weight', name: 'weight', widget: 'number'}
       - { label: 'Profile Photo', name: 'image', widget: 'image', allow_multiple: false, media_folder: '/images/team'}
