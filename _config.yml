@@ -32,8 +32,6 @@ seo:
   meta_twitter_creator: "@zerostaticio"
 
 collections:
-  services:
-    output: true
   team:
     output: true
 
