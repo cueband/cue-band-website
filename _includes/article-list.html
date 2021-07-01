@@ -12,7 +12,7 @@
             <div class="team team-summary team-summary-large">
                 {% if post.image %}
                 <div class="column">
-                    <img height="100px" src="{{site.baseurl}}images/posts/{{post.image}}">
+                    <img height="100px" src="{{ post.image | relative_url }}">
                 </div>
                 {% endif %}
                 <div {% if post.image %}class="column" style="padding-left: 15px;padding-top: 20px;"{% endif %}>
