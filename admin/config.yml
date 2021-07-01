@@ -3,6 +3,7 @@ backend:
   #name: test-repo
   repo: cueband/cue-band-website
   branch: main # Branch to update (optional; defaults to master)
+  site_domain: focused-swartz-5094de.netlify.com
 media_folder: 'assets/uploads'
 collections:
   - name: 'blog'
