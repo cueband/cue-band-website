@@ -1,6 +1,7 @@
 backend:
-  name: github
+  #name: github
   #name: test-repo
+  name: git-gateway
   repo: cueband/cue-band-website
   branch: main # Branch to update (optional; defaults to master)
   site_domain: focused-swartz-5094de.netlify.com
@@ -37,3 +38,16 @@ collections:
       - { label: 'Part of research team?', name: 'core', widget: 'boolean', default: false}
       - { label: 'Weight', name: 'weight', widget: 'number'}
       - { label: 'Profile Photo', name: 'image', widget: 'image', allow_multiple: false, media_folder: '/images/team'}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "about.md"
+        fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Intro, name: intro, widget: markdown}
+  
+
+
