@@ -7,6 +7,6 @@ jobtitle: "Associate Professor"
 institution: "Northumbria University" 
 core: true
 email: kyle.montague@northumbria.ac.uk
-weight: 1
+weight: 2
 layout: team
 ---

@@ -7,7 +7,7 @@ jobtitle: "Senior Research Assistant"
 institution: "Northumbria University"
 email: luis.carvalho@northumbria.ac.uk
 core: true
-weight: 7
+weight: 6
 layout: team
 ---
 

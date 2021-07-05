@@ -7,7 +7,7 @@ jobtitle: "Senior Research Associate"
 institution: "Open Lab, Newcastle University"
 core: true
 email: "dan.jackson@newcastle.ac.uk"
-weight: 2
+weight: 5
 layout: team
 ---
 

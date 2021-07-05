@@ -7,6 +7,6 @@ jobtitle: "Research Associate"
 institution: "Northumbria Healthcare NHS Foundation Trust" 
 core: true
 email: lorelle.dismore@northumbria-healthcare.nhs.uk
-weight: 2
+weight: 7
 layout: team
 ---
