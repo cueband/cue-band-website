@@ -6,7 +6,7 @@ layout: default
         <div class="col-12 col-md-8">
             {%if page.image %}
             <div style="text-align: center; max-height: 300px;">
-                <img src="{{site.baseurl}}images/posts/{{page.image}}" style="height: 300px">
+                <img src="{{ page.image | relative_url }}" style="height: 300px">
             </div>
             {% endif %}
             <div class="service service-single">
