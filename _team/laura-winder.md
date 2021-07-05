@@ -7,7 +7,7 @@ jobtitle: "Project Manager"
 institution: "Northumbria Healthcare NHS Foundation Trust"
 email: laura.winder@northumbria-healthcare.nhs.uk
 core: true
-weight: 7
+weight: 8
 layout: team
 ---
 

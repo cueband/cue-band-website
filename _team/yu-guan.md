@@ -7,6 +7,6 @@ jobtitle: "Lecturer"
 institution: "Newcastle University"
 email: "yu.guan@newcastle.ac.uk"
 core: true
-weight: 1
+weight: 3
 layout: team
 ---
