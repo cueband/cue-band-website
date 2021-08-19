@@ -2,13 +2,11 @@ baseurl: '/'
 permalink: pretty
 title: 'Cue Band'
 
-google_analytics_id: ""
-
 homepage:
   show_call_box: true
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
+  mobile: "images/logo/logo_1.png" #"images/logo/logo-mobile.svg"
   desktop: "images/logo/cueband-logo-2.png" #"images/logo/logo.svg"
   desktop_height: "75px" #"36px"
 
