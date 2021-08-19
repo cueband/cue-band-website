@@ -4,20 +4,31 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{page.title}}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="icon" type="image/png" href="{{ '/images/favicon-32x32.svg' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/images/logo/logo_2.png' | relative_url }}">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
-  {% if page.description %}
-  <meta name="description" content="{{ page.description }}" />
-  {% endif %}
-  <meta property="og:title" content="{{ site.seo.meta_og_title }}" />
-  <meta property="og:type" content="{{ site.seo.meta_og_type }}" />
-  <meta property="og:url" content="{{ site.seo.meta_og_url }}" />
-  <meta property="og:image" content="{{ site.seo.meta_og_image }}" />
-  <meta property="og:description" content="{{ site.seo.meta_og_description }}" />
-  <meta name="twitter:card" content="{{ site.seo.meta_twitter_card }}" />
-  <meta name="twitter:site" content="{{ site.seo.meta_twitter_site }}" />
-  <meta name="twitter:creator" content="{{ site.seo.meta_twitter_creator }}" />
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Cue Band - Wearables for Parkinson's">
+  <meta name="description" content="Cue Band, funded by Parkinson's UK, is developing cueing devices to diminish drooling symptoms of people living with Parkinson's.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cue.band/">
+  <meta property="og:title" content="Cue Band - Wearables for Parkinson's">
+  <meta property="og:description" content="Cue Band, funded by Parkinson's UK, is developing cueing devices to diminish drooling symptoms of people living with Parkinson's.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://cue.band/">
+  <meta property="twitter:title" content="Cue Band - Wearables for Parkinson's">
+  <meta property="twitter:description" content="Cue Band, funded by Parkinson's UK, is developing cueing devices to diminish drooling symptoms of people living with Parkinson's.">
+  <meta property="twitter:image" content="https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png">
+
+
+
+
 
   <!-- Fathom - beautiful, simple website analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="BTSNYBWP" defer></script>
