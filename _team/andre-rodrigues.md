@@ -1,14 +1,14 @@
 ---
-title: "André Rodrigues"
-date: 2018-11-19T10:47:58+10:00
 draft: false
-image: "images/team/andre-rodrigues.jpeg"
-jobtitle: "PhD Researcher"
-institution: "LASIGE, Universidade de Lisboa"
-core: false
-email: "afrodrigues@fc.ul.pt"
-weight: 3
 layout: team
+title: Dr André Rodrigues
+date: 2018-11-19T10:47:58+10:00
+jobtitle: Research Associate
+institution: LASIGE, Universidade de Lisboa
+email: afrodrigues@fc.ul.pt
+core: false
+weight: 3
+image: images/team/andre-rodrigues.jpeg
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
