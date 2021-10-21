@@ -22,17 +22,43 @@
 </style>
 
 <form style="display: flex; flex-direction: column;">
+    <h3 for="smartphoneTypes">What type of smartphone do I own:</h3>
+    <select name="smartphoneTypes" id="smartphoneTypes">
+        <option value="select">Select the type of smartphone</option>
+        <option value="android">Android</option>
+        <option value="iOS">iOS</option>
+        <option value="no">I don't own a smarphone</option>
+    </select>
     <div>
-        <label for="get-involved-email">Email:</label>
-        <input id="get-involved-email" type="email" placeholder="Your email" required autocomplete="on">
+        <input id="consent-get-involved-symptoms" type="checkbox">
+        <div>
+            <h3 for="consent-get-involved-own-study" style="margin-top: 0;">I am interested in participating in the Cue Band study.</h3>
+            <label>You will be asked to:</label>
+            <ul>
+                <li> Install the mobile application in your smartphone device. <a>(More details)</a></li>
+                <li> Wear the Cue Band wearable device. <a>(More details)</a></li>
+                <li> Share anonymous usage data from the Cue Band device. <a>(More details)</a></li>    
+                <li>(Optional) Provide feedback on your experiences</li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <input id="consent-get-involved-symptoms" type="checkbox">
+        <div>
+            <h3 for="consent-get-involved-own-study" style="margin-top: 0;">I would be willing to participate in a formal trial of the Cue Band wearable device.</h3>
+            <label>
+                <a>Learn more about the formal trial.</a>
+            </label>
+        </div>
     </div>
     <div>
         <input id="consent-get-involved-email" type="checkbox" required>
-        <label for="consent-get-involved-email">I hereby consent to the Cue Band <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a>.</label>
+        <h3 for="consent-get-involved-email" style="margin-top: 0;">I hereby consent to the Cue Band <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a>.</h3>
     </div>
     <div>
         <input id="receive-get-involved-email" type="checkbox" required>
-        <label for="receive-get-involved-email">By ticking this box you are agreeing to receive Cue Band emails. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</label>
+        <h3 for="receive-get-involved-email" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3>
     </div>
+
     <button type="submit" style="height: 45px; background-color: #E5261F; color: white; border: 0">Send</button>
 </form>
