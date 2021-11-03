@@ -16,49 +16,69 @@ The current treatments to tackle drooling focus on decreasing saliva production.
 * [More information about drooling](https://www.parkinsons.org.uk/information-and-support/eating-swallowing-and-saliva-control)
 
 
-## Technology behind the Cue Band
-Coming Soon
+<h2 id="about-technology"> Technology behind Cue Band </h2>
+<h3 id="about-wearable"> The Wearable Wristband - Cue Band </h3>
+Cue Band is a small wearable device worn on the wrist, allowing discrete and comfortable wear. It allows individuals to define a 7-day cueing schedule of when the device should start/stop cueing, as well as modify the intervals and intensity of the haptic cues. 
 
-### App Specifications
-Coming Soon
+The Cue Band hardware is the [PINE64 PineTime Smartwatch](https://wiki.pine64.org/wiki/PineTime). This hardware was chosen as its design is open source and it allows us to use our own custom firmware to customize the device's behaviour. The firmware is a custom "fork" off the [InfiniTime open source firmware](https://github.com/JF002/InfiniTime), chosen as it provides basic watch functionality. Costing just £20, this smartwatch has qualities found normally in mainstream fitness trackers:
 
-### Data collected
+* Touchscreen
+* 3-axis accelerometer (capable of a signal response up to 200Hz)
+* Bluetooth BLE 4.0 communication
+* Controllable vibration motor to provide haptic feedback
+* 70mAh Battery
+* Heart-rate monitor
+
+It is the onboard software (i.e. firmware) that sets Cue Band apart from consumer devices. Our custom firmware allows the device to be updated or reprogrammed over-the-air via a Bluetooth device such as a smartphone. This means that it is possible to change and update the functionality of any Cue Band device remotely via the user's smartphone. There are no restrictions on the amount of times that the device can be updated or reprogrammed, making this an exciting device for future healthcare interventions.
+
+Currently we are exploring the application of Cue Band to deliver haptic cueing for people with Parkinson's experiencing drooling.  While existing fitness trackers are able to vibrate and provide notifications, they are limited in the control over the vibration motor and those actions are typically driven by the smartphone – i.e. rely on the connection with the smartphone to instruct the fitness tracker to take action. Whereas Cue Band has been designed as a standalone solution, meaning that once the device has been programmed with the 7-day cueing schedule, it is possible to then disconnect the smartphone (or leave it at home) and still receive the cueing prompts. 
+
+All our software are open-source technologies and available for anyone to inspect, use or repurpose. Many commercially available wearable devices are closed source or ’black-box’ technologies that obfuscate the firmware and algorithms to perform physical activity and sleep monitoring. As such, it is difficult to assess how appropriate those algorithms are for people with Parkinson's therefore how accurate the reported data are. The open source design of Cue Band means that any publications or anonymous datasets resulting from the device can be scrutinised and validated against other open source datasets and algorithms.
+
+<h3 id="about-mobile-app"> The Mobile Application - Cue Band App </h3>
+
+The Cue Band App is a mobile application that serves as a companion to the Cue Band wearable. Through it, the user will be able to create a 7-day schedule of cueing time, start and stop cueing at any moment, define the intensity, type (mobile vibration, audio or band vibration) and where to receive the cueing, and create daily self-reports to register drooling symptoms.
+
+The app uses the smartphone's Bluetooth to communicate with Cue Band, allowing the schedule to be set in the smartwatch and, at the same time, collect data of the smartwatch daily usage. Through Bluetooth, the app will also be able to install new versions on the smartwatch firmware.
+
+This app will be available on both iOS and Android. Since we aim to make it available to the most smartphones possible, we are targetting the minimal required version to Android 5.0 and iOS 9.
+
+
+<h3 id="about-data"> Data collected </h3>
+
+The type of data collected from participants depends on what particiapants allows us to. We will never collected data from particiapnts without their permission, allowing this way users to decide want they want to share with us.
+
+All collected data will be safely stored in a database, only directly accessible by the researchers involved in this study. If you wish to get all the data we collect from you, you can either contact us or directly download it through the app. 
+
+From the mobile application and wristband, we will collect two types of data:
+
+1) Anonymous data analysed at an aggregated level - This includes data like wear time of the wearable, activity data and sleep behaviours. This type of data is opted‐in, as the participant can choose if they want to share it or not.
+
+2) Identifiable data - This includes cueing schedules created by the participants, feedback given through the app, self‐report diaries with drooling scales, age range, ethnicity and address.
 
 
 
 
-
-## Studies
-
+<h2 id="about-studies">  Studies </h2>
 ![image info](/images/study.png)
 
 Our study explores the potential effects of different cueing methods on the perceived drooling severity and frequency. We will conduct a comparison study between receiving prompts for swallowing from the smartphone app and the wristband wearable. Participants will experience both cueing methods at determined intervals of 3 weeks and register daily their symptoms and experiences throughout the study.
 
 We aim to recruit a total of 3000 people with Parkinson’s, which will receive a wristband to use in their daily life as they wish, contributing to the study through anonymous usage data. From these 3000 participants, we will recruit 300 for the formal comparison study between cueing methods over eight weeks. Every participant can keep the wristband for their daily life after the study ends if they wish to do so.
 
+<h3 id="about-formal-study"> Formal Study </h3>
+We will recruit 300 people with Parkinson’s (10% of the total number of participants) to participate in our eight-week cueing intervention study. In this study, participants will be divided into two groups (Group A & B). Each participant will experience both interventions (wristband wearable and smartphone app only) in separate periods. They will be asked to use an intervention for three weeks.  After three weeks, participants will receive the alternative intervention for another three weeks. During this time, participants will be asked to maintain a daily diary using the tools provided through our mobile app. They will self-report on their swallowing severity, frequency, and duration and provide any additional comments or reflections on their experiences that day. Before and after each intervention method, participants will also complete formal assessments of their symptoms.
 
-### Medical Study
-
-We will recruit 300 PwP (95%, CI=5.65%) to participate in our eight-week cueing intervention study in which we are using a within-subjects design. We will capture formal assessments of the individuals symptoms before and after each intervention method. Formal Assessments will comprise of questions from the ROMP-Saliva (Kalf et al 2011b), the DSFS-P which looks at severity and frequency (Thomas-Stonell et al 1988), UPDRS 2.2 subset for saliva (Goetz CG et al 2008) and NMSQ (Chaudhuri et al 2006) and new NMSQ (Chaudhuri et al 2020), which is a modification of the first NMSQ (Chaudhuri et al 2006).
-
-During this time, participants will be asked to maintain a daily diary using the tools provided through our mobile app. They will self-report on their swallowing severity, frequency and duration; as well as provide any additional comments or reflections on their experiences that day. Prior to receiving the interventions, participants will complete a two-week baseline during our on boarding phase, whereby they complete the daily diary (drooling severity chart) and self-reporting without any intervention.
-
-For our 300 PwP involved in the cueing method intervention study (Groups A & B) each participant of Groups A & B will experience both interventions (CUE BAND wearable and smartphone only); however, the intervention order will be counter-balanced to avoid learning effects or additional bias. Intervention order will be based on a randomised allocation. They will be asked to use the intervention for a period of three weeks, while maintaining the daily diaries and self-reporting. After 3 weeks, participants will receive the alternative intervention for three weeks. Following the intervention phase of our study, participants will be asked to complete a questionnaire about their experience and preferences regarding both interfaces (CUE BAND wearable and smartphone only). Participants will be allowed to retain the CUE BAND wearable beyond our evaluation; however, we will disable any data sharing with the research team. As part of the debrief phase we will assist the participants in setting up their preferred prompting method (CUE BAND wearable or smartphone only), or disabling and removing the mobile applications if they no long wish to use them.
+Before receiving the interventions, participants will complete a two-week baseline during our onboarding phase. During which they complete the daily diary (drooling severity chart) and self-reporting without any intervention.
 
 A subgroup who express an interest, will enter a 3 week phase at the end of the interventions, when they receive neither intervention to see if there is a carry over effect.  They will then have the same follow-up assessments as at the end of the intervention period prior to exiting the study.  
 
+Following the intervention phase of our study, participants will be asked to complete a questionnaire about their experience and preferences regarding both the wristband wearable and smartphone app.
 
-### Free-Living Study
+<h3 id="about-free-living-study"> Free-Living Study </h3>
+We will recruit 2700 people with Parkinson's (90% of the total number of participants) to use the wearable and the app freely in their daily lives. They will only be providing anonymous usage data (i.e. cueing schedule, physical activity and sleep behaviours). At the same time, they also can give feedback and suggestions through the mobile app.
 
-Participants will 
-
-## Timeline
-
-## References
-
--------------
+<h3 id="about-timeline"> Timeline </h3>
+{% include timeline.html %}
 
 
-NICE guidelines [6] on the treatment for drooling problems recommended that non-invasive treatment options, such as behavioural cueing methods, before drug or surgical therapy is considered. Cueing has been employed to successfully improve aspects of impaired activities in Parkinson’s, such as gait. Our research has piloted this approach using a wrist- worn device to haptically cue for automatic swallowing [4]. Despite the limitations of our pilot study, we were able to demonstrate that the wearable haptic cueing was not only an effective treatment method, it was also a socially acceptable solution for PwP. While PD-CUE was able to discretely deliver the haptic cueing to the individual, the device itself was cumbersome and was not yet suitable for all day use, with participants wearing it for 1 hour per day only. PD-CUE was a rather simplistic in design, with a single toggle switch to start and stop the haptic cueing, will no ability to modify the intervals on intensity. This required for the individual consciously and manually start/stop the cueing as needed made it a less desirable everyday solution. Moreover, due to the limited functionality, we were unable to capture or understand the real-world behaviours and usage of the intervention to understand the longer-term effects.
-
-Through this project, we will deploy the next iteration of PD-CUE, the Cue Band device. Cue Band has been refined and redesigned with the input and feedback of PwP to make it more discrete and comfortable to wear. Our new device allows the individual to pre-define a 7-day cueing schedule of when the device should start/stop cueing, as well as modify the intervals and intensity of the haptic cues. The inclusion of lifestyle monitoring sensors to Cue Band means that we can situate and contextualise the cueing usage alongside the physical activity and sleep behaviours of PwP. Will recruit 3000 PwP to wear the device throughout our 6-week evaluation. Participants will be asked to wear the device 24/7 during this time, giving us a greater understanding of the effectiveness and acceptability of the technology within real-world use.

@@ -1,7 +1,7 @@
 <style>
     form > div {
         display: flex;
-        margin: 20px 0px 20px 0px;
+        margin: 10px 0px 20px 0px;
     }
 
     form > div > input[type=checkbox] {
@@ -18,28 +18,38 @@
     form > button:hover {
         box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
     }
-
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<form style="display: flex; flex-direction: column;">
-    <h3 for="smartphoneTypes">What type of smartphone do I own:</h3>
-    <select name="consent-get-involved-smartphone-type" id="sconsent-get-involved-smartphone-type">
-        <option value="select">Select the type of smartphone</option>
-        <option value="android">Android</option>
-        <option value="iOS">iOS</option>
-        <option value="no">I don't own a smarphone</option>
-    </select>
+<form id="consent-get-involved-form" style="display: flex; flex-direction: column;" onSubmit="submitContact();return false">
+    <div>
+        <h3 for="consent-get-involved-email" style="margin-top: 0;">Email:</h3>
+        <input id="consent-get-involved-email" type="email" required placeholder="My email">
+    </div>
+    <div style="flex-direction: column;">
+        <h3 for="consent-get-involved-smartphone-type" style="margin: 0;">What type of smartphone do I own:</h3>
+        <select name="consent-get-involved-smartphone-type" id="consent-get-involved-smartphone-type" style="font-size: larger;">
+            <option value="select">Select the type of smartphone</option>
+            <option value="android">Android</option>
+            <option value="ios">iOS</option>
+            <option value="no">I don't own a smarphone</option>
+        </select>
+        <label id="consent-get-involved-smartphone-type-warning" style="color: red; margin-top: 8px; display: none;"> Please select an option.</label>
+    </div>
     <div>
         <input id="consent-get-involved-study" type="checkbox">
         <div>
             <h3 for="consent-get-involved-own-study" style="margin-top: 0;">I am interested in participating in the Cue Band study.</h3>
             <label>You will be asked to:</label>
             <ul>
-                <li> Install the mobile application in your smartphone device. <a>(More details)</a></li>
-                <li> Wear the Cue Band wearable device. <a>(More details)</a></li>
-                <li> Share anonymous usage data from the Cue Band device. <a>(More details)</a></li>    
+                <li> Install the mobile application in your smartphone device. <a href="{{ site.url }}/about/#about-mobile-app">(More details)</a></li>
+                <li> Wear the Cue Band wearable device. <a href="{{ site.url }}/about/#about-wearable">(More details)</a></li>
+                <li> Share anonymous usage data from the Cue Band device. <a href="{{ site.url }}/about/#about-data">(More details)</a></li>    
                 <li>(Optional) Provide feedback on your experiences</li>
             </ul>
+            <label>
+                <a href="{{ site.url }}/about/#about-free-living-study">Learn more about the study.</a>
+            </label>
         </div>
     </div>
     <div>
@@ -47,7 +57,7 @@
         <div>
             <h3 for="consent-get-involved-own-study" style="margin-top: 0;">I would be willing to participate in a formal trial of the Cue Band wearable device.</h3>
             <label>
-                <a>Learn more about the formal trial.</a>
+                <a href="{{ site.url }}/about/#about-formal-study">Learn more about the formal trial.</a>
             </label>
         </div>
     </div>
@@ -60,6 +70,69 @@
         <h3 for="receive-get-involved-email" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3>
     </div>
 
-    <button type="submit" style="height: 45px; background-color: #E5261F; color: white; border: 0">Send</button>
+    <button id="consent-get-involved-submit-button" type="submit" style="height: 45px; background-color: #E5261F; color: white; border: 0"> 
+        Submit
+    </button>
 </form>
 
+<script>
+    function submitContact(){
+
+        let smartphoneTypeWarning = document.getElementById("consent-get-involved-smartphone-type-warning");
+        
+        let submitButton = document.getElementById("consent-get-involved-submit-button");
+        submitButton.disabled = true;
+        submitButton.innerText = "";
+
+        let iElement = document.createElement("i"); 
+        iElement.classList.add("fa", "fa-refresh", "fa-spin");
+        submitButton.appendChild(iElement);
+
+        const smartphoneType = document.getElementById("consent-get-involved-smartphone-type").value;
+        if(smartphoneType == "select") {
+            smartphoneTypeWarning.style.display = "block";
+            resetSubmitButton(submitButton);
+            window.scrollTo(0, 0);
+            return false;
+        } else {
+            smartphoneTypeWarning.style.display = "none";
+        }
+
+        const formalTrial = document.getElementById("consent-get-involved-formal-study").checked;
+        const study = document.getElementById("consent-get-involved-study").checked;
+        const email = document.getElementById("consent-get-involved-email").value;
+
+        const responseBody = {
+            "smartphone_type": smartphoneType,
+            "formal_trial": formalTrial,
+            "study": study,
+            "email": email
+        }
+
+        const SITE_URL = "http://178.62.44.159:3000";
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", SITE_URL + '/signup', true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+        xhr.onreadystatechange = function() { // Call a function when the state changes.
+            if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                console.log("Success");
+                window.location.href='/thankyou'
+            } else {
+                console.log("Error");
+                submitButton.disabled = true;
+            }
+        }
+        xhr.send(JSON.stringify(responseBody));
+    }
+
+    function resetSubmitButton(button) {
+        while (button.firstChild) {
+            button.removeChild(button.lastChild);
+        }
+        button.innerText = "Submit";
+        button.disabled = false;
+    }
+
+</script>
