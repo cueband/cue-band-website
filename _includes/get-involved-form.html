@@ -15,9 +15,24 @@
         width: 100%;
     }
 
+    form > button{
+        height: 45px; 
+        background-color: #E5261F; 
+        color: white; 
+        border: 0
+    }
+
     form > button:hover {
         box-shadow: 0px 4px 8px rgb(38 38 38 / 20%);
     }
+
+
+
+
+    form > button:disabled {
+        background-color: lightgrey;
+    }
+
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -68,15 +83,15 @@
         </div>
     </div>
     <div>
-        <input id="consent-get-involved-email" type="checkbox" required>
-        <h3 for="consent-get-involved-email" style="margin-top: 0;">I hereby consent to the Cue Band <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a>.</h3>
+        <input id="consent-get-involved-policy-privacy" type="checkbox" required>
+        <h3 for="consent-get-involved-policy-privacy-label" style="margin-top: 0;">I hereby consent to the Cue Band <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a>.</h3>
     </div>
     <div>
-        <input id="receive-get-involved-email" type="checkbox" required>
-        <h3 for="receive-get-involved-email" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3>
+        <input id="receive-get-involved-receive-emails" type="checkbox" required>
+        <h3 for="receive-get-involved-receive-emails-label" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3>
     </div>
 
-    <button id="consent-get-involved-submit-button" type="submit" style="height: 45px; background-color: #E5261F; color: white; border: 0"> 
+    <button id="consent-get-involved-submit-button" type="submit" disabled > 
         Submit
     </button>
 </form>
@@ -141,5 +156,43 @@
         button.disabled = false;
     }
 
+    
+    const checkboxPrivacy = document.getElementById("consent-get-involved-policy-privacy");
+    const checkboxEmails = document.getElementById("receive-get-involved-receive-emails")
+    let checkboxPrivacyChecked = false;
+    let checkboxEmailsChecked = false;
+
+
+    checkboxPrivacy.addEventListener('change', function() {
+        if (this.checked) {
+            checkboxPrivacyChecked = true;
+        } else {
+            checkboxPrivacyChecked = false;
+        }
+
+        let submitButton = document.getElementById("consent-get-involved-submit-button");
+        if(checkboxPrivacyChecked  && checkboxEmailsChecked ) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+
+
+    });
+
+    checkboxEmails.addEventListener('change', function() {
+        if (this.checked) {
+            checkboxEmailsChecked = true;
+        } else {
+            checkboxEmailsChecked = false;
+        }
+
+        let submitButton = document.getElementById("consent-get-involved-submit-button");
+        if(checkboxPrivacyChecked  && checkboxEmailsChecked ) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    });
 
 </script>
