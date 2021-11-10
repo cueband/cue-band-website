@@ -7,6 +7,7 @@
     form > div > input[type=checkbox] {
         margin-right: 20px;
         transform: translate(5px, 5px) scale(1.5);
+        align-self: baseline;
     }
 
     form > div > input[type=email] {
@@ -88,7 +89,8 @@
     </div>
     <div>
         <input id="receive-get-involved-receive-emails" type="checkbox" required>
-        <h3 for="receive-get-involved-receive-emails-label" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3>
+        <!--h3 for="receive-get-involved-receive-emails-label" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time. Please refer to our <a href="{{site.base_url}}/privacy" target="_blank">Privacy Policy</a> or Contact Us for more details.</h3-->
+        <h3 for="receive-get-involved-receive-emails-label" style="margin-top: 0;">By ticking this box you are agreeing to receive emails from Cue Band and its team. You can withdraw your consent at any time.</h3>
     </div>
 
     <button id="consent-get-involved-submit-button" type="submit" disabled > 
