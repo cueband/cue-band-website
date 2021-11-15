@@ -7,7 +7,7 @@ intro_image_hide_on_mobile: false
 ---
 
 Your e-mail address has been confirmed! <br>
-Please look forward to be conntected in the future with more details about the Cue Band study.
+Please look forward to be contacted in the future with more details about the Cue Band study.
 
 
 
