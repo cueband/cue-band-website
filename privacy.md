@@ -36,7 +36,7 @@ We use different methods to collect data from and about you including through:
 
 Direct interactions. You may give us your identity and contact details by filling in forms or by corresponding with us by post, phone, email or otherwise. This includes personal data you provide when you:
 
-* register on the Cue Band website for the study;
+* register your interest to be contact about on the Cue Band study through the website;
 
 * send us a message via the “Feedback Page” page on the Cue Band website.
 
