@@ -89,6 +89,10 @@ intro_image_hide_on_mobile: false
     </p>
 </div>
 
+<p>
+    If you are having difficulties installing the <strong>Cue Band</strong> app on your smartphone device, please refer to our online support website at <a href="https://faq.cue.band">https://faq.cue.band</a>
+</p>
+
 <script>
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
