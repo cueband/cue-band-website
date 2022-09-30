@@ -11,9 +11,9 @@ main:
   - name: "Get Involved"
     url: "/getinvolved/"
     weight: 5
-#  - name: "Articles"
-#    url: /articles/
-#    weight: 6
+  - name: "Download App"
+    url: /app/
+    weight: 6
 
 footer:
   - name: "Home"
@@ -28,6 +28,6 @@ footer:
   - name: "Get Involved"
     url: "/getinvolved/"
     weight: 5
-#  - name: "Articles"
-#    url: /articles/
-#    weight: 6
+  - name: "Download App"
+    url: /app/
+    weight: 6
