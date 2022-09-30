@@ -6,8 +6,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-<script src="https://cdn.usefathom.com/script.js" data-site="NLUAZAUK" defer></script>
-
 <p style="text-align: center"> 
    The Cue Band app is available to download on your mobile device.
 </p>
@@ -27,15 +25,15 @@ intro_image_hide_on_mobile: false
         Alternatively use the links below to download the app:
     </p>
     <ul style="list-style: none">
-        <li style="padding-bottom: 25px"><a href="{{ "appandroid" | relative_url }}">Android, Google Play Store</a></li>
-        <li><a href="{{ "appios" | relative_url }}">iPhone, App Store</a></li>
+        <li style="padding-bottom: 25px"><a href="{{ "appandroid" | relative_url }}" onclick="fathom.trackGoal('2KINLWDL', 1);">Android, Google Play Store</a></li>
+        <li><a href="{{ "appios" | relative_url }}" onclick="fathom.trackGoal('JIDYSHSY', 1);">iPhone, App Store</a></li>
     </ul>
 </div>
 
 <div id="androidContainer" style="text-align: center; display: none;">
     <p>Tap the following link to be taken to the Play Store and install the app:</p>
     <p style="text-align: center; padding-bottom: 25px">
-        <a href="{{ "appandroid" | relative_url }}">Android, Google Play Store</a>
+        <a href="{{ "appandroid" | relative_url }}" onclick="fathom.trackGoal('2KINLWDL', 1);">Android, Google Play Store</a>
     </p>
     <p style="text-align: center">
         If you are installing the app on another device, on that device's web browser go to the site:
@@ -47,7 +45,7 @@ intro_image_hide_on_mobile: false
         The app is also available on iPhone:
     </p>
     <p>
-        <a href="{{ "appios" | relative_url }}">iPhone, App Store</a>
+        <a href="{{ "appios" | relative_url }}" onclick="fathom.trackGoal('JIDYSHSY', 1);">iPhone, App Store</a>
     </p>
 </div>
 
@@ -55,7 +53,7 @@ intro_image_hide_on_mobile: false
 <div id="iosContainer" style="text-align: center; display: none;">
     <p>Tap the following link to be taken to the App Store and install the app:</p>
     <p style="text-align: center; padding-bottom: 25px">
-        <a href="{{ "appios" | relative_url }}">iPhone, App Store</a>
+        <a href="{{ "appios" | relative_url }}" onclick="fathom.trackGoal('JIDYSHSY', 1);">iPhone, App Store</a>
     </p>
     <p style="text-align: center">
         If you are installing the app on another device, on that device's web browser go to the site:
@@ -67,7 +65,7 @@ intro_image_hide_on_mobile: false
         The app is also available on Android:
     </p>
     <p>
-        <a href="{{ "appandroid" | relative_url }}">Android, Google Play Store</a>
+        <a href="{{ "appandroid" | relative_url }}" onclick="fathom.trackGoal('2KINLWDL', 1);">Android, Google Play Store</a>
     </p>
 </div>
 <p style="text-align: left">

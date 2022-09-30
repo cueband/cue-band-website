@@ -8,7 +8,6 @@ permalink: /appandroid/
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="refresh" content="0; URL=https://play.google.com/store/apps/details?id=band.cue.app" />
-  <script src="https://cdn.usefathom.com/script.js" data-site="2KINLWDL" defer></script>
   <title>Android App</title>
 </head>
 <body>
