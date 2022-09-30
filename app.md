@@ -1,5 +1,5 @@
 ---
-title: Download App
+title: Download
 layout: page
 permalink: /app/
 intro_image_absolute: true

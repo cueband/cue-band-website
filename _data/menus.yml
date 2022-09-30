@@ -8,10 +8,10 @@ main:
   - name: "Who Are We"
     url: "/whoarewe/"
     weight: 4
-  - name: "Get Involved"
-    url: "/getinvolved/"
-    weight: 5
-  - name: "Download App"
+#  - name: "Get Involved"
+#    url: "/getinvolved/"
+#    weight: 5
+  - name: "Download"
     url: /app/
     weight: 6
 
@@ -25,9 +25,9 @@ footer:
   - name: "Who Are We"
     url: "/whoarewe/"
     weight: 4
-  - name: "Get Involved"
-    url: "/getinvolved/"
-    weight: 5
-  - name: "Download App"
+#  - name: "Get Involved"
+#    url: "/getinvolved/"
+#    weight: 5
+  - name: "Download"
     url: /app/
     weight: 6
