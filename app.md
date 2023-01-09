@@ -6,9 +6,6 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: false
 ---
 
-
-{% include christmas-alert.html %}
-
 <p style="text-align: center"> 
    The Cue Band app is available to download on your mobile device.
 </p>
