@@ -20,7 +20,7 @@ The current treatments to tackle drooling focus on decreasing saliva production.
 <h3 id="about-wearable"> The Wearable Wristband - Cue Band </h3>
 Cue Band is a small wearable device worn on the wrist, allowing discrete and comfortable wear. It allows individuals to define a 7-day cueing schedule of when the device should start/stop cueing, as well as modify the intervals and intensity of the haptic cues. 
 
-The Cue Band hardware is the [PINE64 PineTime Smartwatch](https://wiki.pine64.org/wiki/PineTime). This hardware was chosen as its design is open source and it allows us to use our own custom firmware to customize the device's behaviour. The firmware is a custom "fork" off the [InfiniTime open source firmware](https://github.com/JF002/InfiniTime), chosen as it provides basic watch functionality. Costing just £20, this smartwatch has qualities found normally in mainstream fitness trackers:
+The Cue Band hardware is the [PINE64 PineTime Smartwatch](https://wiki.pine64.org/wiki/PineTime). This hardware was chosen as its design is open source and it allows us to use our own custom firmware to customize the device's behaviour. The firmware is a custom "fork" off the [InfiniTime open source firmware](https://github.com/JF002/InfiniTime), chosen as it provides basic watch functionality. This smartwatch has qualities found normally in mainstream fitness trackers:
 
 * Touchscreen
 * 3-axis accelerometer (capable of a signal response up to 200Hz)
